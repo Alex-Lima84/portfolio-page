@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content="Portfolio Front End Developer - Alexandre Luiz">
+    
+    <title>AL - PORTFOLIO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/loader.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
+    <link rel="stylesheet" href="./src/css/index.css">    
+    <link rel="stylesheet" href="./src/css/responsive.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+
+</head>
+<body>
+    
+    <div class="loading" id="preloader">
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="welcome-message">Seja Bem-vindo(a)</div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>    
+
+    <header class="header">
+        <div class="header-container">
+            <a href="/">
+                <h1 class="logo">Portfólio</h1>
+            </a>
+                
+            <nav>
+                <input type="checkbox" id="menu-hamburguer" />    
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>            
+                <ul>
+                    <li><a href="#about"><span>01.</span>Sobre</a></li>
+                    <li><a href="#abilities"><span>02.</span>Habilidades</a></li>
+                    <li><a href="#projects"><span>03.</span>Projetos</a></li>
+                    <li><a href="./src/images/CV Alexandre Luiz Cerutti Lima - PT.jpg" class="resume-link" target="_blank">CURRÍCULO</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>          
+
+    <main>
+
+        <aside class="social-medias">
+            <ul class="medias-list">
+                <li><a href="https://github.com/Alex-Lima84" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandre-cerutti" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/alexandreluizcl/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="mailto:alexandre.cerutti@live.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </aside>
+        
+        <section class="hero">
+
+            <h1>Olá! Meu nome é</h1>
+            <h2>Alexandre Luiz.</h2>
+            <h3>Sou um desenvolvedor Front-End.</h3>
+            <p class="presentation">Localizado em Santa Catarina - BR, estou em busca de uma <a class="opportunity-email" href="mailto:alexandre.cerutti@live.com" name="email">oportunidade</a>. Sou focado, curioso e apaixonado por tecnologia.</p>
+
+        </section>
+
+        <div class="photo-container">
+            <div class="color-overlay"></div>
+            <img class="personal-photo" src="/src/images/foto-minha.png" alt="foto pessoal">        
+        </div>
+
+        <section class="about-section" id="about">
+
+            <h2 class="section-paragraphs"><span>01.</span>Sobre:</h2>
+            <p class="about-text">Minha carreira iniciou-se em 2021, quando resolvi investir em um antigo sonho, o desenvolvimento web. 
+                Sou uma pessoa de fácil relacionamento, com muita vontade de aprender e contribuir. 
+                Atualmente estou cursando a graduação em Análise e Desenvolvimento de Sistemas.</p>
+
+        </section>
+
+        <section class="abilities-section" id="abilities">
+            
+            <div class="abilities-info-container">
+                <h2 class="section-paragraphs"><span>02.</span>Habilidades:</h2>
+                <p class="abilities-text">Algumas das tecnologias que tenho trabalhado recentemente:</p>
+            </div>            
+            <div class="abilities-list-container">               
+                <ul class="abilities-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript ES6+</li>
+                    <li>React</li>
+                    <li>GIT</li>                
+                </ul>
+            </div>       
+
+        </section>
+
+        <section class="projects-section" id="projects">
+
+            <div class="projects-info">
+                <h2 class="section-paragraphs"><span>03.</span>Projetos:</h2>
+                <p class="projects-text">Alguns dos projetos que construí:</p>
+            </div>
+
+            <div class="projects-container">
+
+                <div class="weather-project projects">
+                    <h3>PREVISÃO DO TEMPO</h3>
+                    <p>Página web desenvolvida para consulta da previsão do tempo, livre de anúncios.</p>
+                    <a class="project-link" href="https://alex-lima84.github.io/weather-api-website/" target="_blank">
+                        <img src="./src/images/previsão-do-tempo.jpg" alt="imagem site previsão do tempo" />
+                    </a>
+                    <a class="repository-link" href="https://github.com/Alex-Lima84/weather-api-website" target="_blank">Repositório do projeto</a>
+                </div>
+
+                <div class="github-project projects">
+                    <h3>GITHUB</h3>
+                    <p>Página web desenvolvida para consulta de dados de usuários do Github.</p>
+                    <a class="project-link" href="https://alex-lima84.github.io/fetch-github-api/" target="_blank">
+                        <img src="./src/images/github-api.png" alt="imagem site consulta Github " />
+                    </a>
+                    <a class="repository-link" href="https://github.com/Alex-Lima84/fetch-github-api" target="_blank">Repositório do projeto</a>
+                </div>       
+                
+                <div class="landing-page-project projects">
+                    <h3>LANDING PAGE</h3>
+                    <p>Landing page desenvolvida para uma agência de marketing fictícia</p>
+                    <a class="project-link" href="https://alex-lima84.github.io/mkt-agency-landing-page/" target="_blank">
+                        <img src="./src/images/mkt-landing-page.png" alt="imagem site landing page" />
+                    </a>
+                    <a class="repository-link" href="https://github.com/Alex-Lima84/mkt-agency-landing-page" target="_blank">Repositório do projeto</a>
+                </div>       
+
+            </div>    
+
+        </section>
+
+        <footer class="footer">
+                <ul class="medias-list">
+                    <li><a href="https://github.com/Alex-Lima84" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/alexandre-cerutti" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/alexandreluizcl/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="mailto:alexandre.cerutti@live.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+                </ul>
+                <h5>Todos os direitos reservados - 2022</h5>
+        </footer>
+        
+    </main>    
+    
+    <script src="./src/scripts/index.js"></script>
+
+</body>
+</html>

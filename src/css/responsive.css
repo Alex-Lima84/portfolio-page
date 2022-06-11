@@ -1,0 +1,160 @@
+@media (max-width: 1221px) {
+    .photo-container::before{
+    
+        margin-right: 40px;
+        width: 38%;       
+    }    
+}
+
+@media (max-width: 1023px) {         
+     .color-overlay,
+     .personal-photo{
+         width:295px;
+         height: 220px;
+     }
+}
+
+@media (max-width: 900px) {
+    .hero{
+        margin-right: 10px;
+    }
+    
+    .hero h2,
+    .hero h3{
+        font-size: 3rem;
+    }
+
+    .photo-container::before{
+    
+        display: none;       
+    }    
+}
+
+@media (max-width: 768px){
+    .header .menu{
+        display: block;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .header input:checked ~ ul{
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 8px;
+        right: 25px;
+        z-index: 1;
+    }
+
+    .header nav ul{
+        width: 200px;
+        background-color: var(--dark-grey);
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    .header nav ul a{
+        text-align: left;
+        padding: 20px;
+        display: block;
+    }
+
+    .resume-link {
+        box-shadow: none;
+    }
+
+    .social-medias {
+        display: none;
+    }
+
+    .hero h2,
+    .hero h3{
+        font-size: 2rem;
+    }
+
+    .hero{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .photo-container{
+        justify-content: center;
+        margin-right: 0;
+      }
+
+    .about-section,
+    .abilities-section,
+    .projects-section{
+        margin: 0 20px 40px 20px;
+        max-width: 100%;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .footer::before {
+        content: "";
+        display: block;
+        width: 75%;
+        height: 1px;
+        margin-top: 1rem;
+        background-color: var(--blue);    
+    }
+
+    .footer h5{
+        font-size: 102%;
+        color: var(--light-grey);
+        margin-bottom: 20px;
+    }
+
+    .footer .medias-list{
+        display:flex;
+    }
+
+    .footer .medias-list li{
+        margin: 30px;
+        font-size: 2rem;
+    }
+
+    .footer .medias-list li a{
+        color: var(--green);
+        transition: 0.5s ease-in-out;
+    }
+
+    .footer ul li a:hover{
+        color: var(--white);
+    }
+    
+}
+
+@media (max-width: 425px){
+
+    .hero{
+        margin-top: 50px;
+    }
+
+    .hero h2,
+    .hero h3{
+        font-size: 1.5rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .section-paragraphs,
+    .section-paragraphs span{
+        font-size: 1.5rem;
+    }
+
+}
