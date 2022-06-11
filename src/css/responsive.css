@@ -1,9 +1,13 @@
-@media (max-width: 1221px) {
+@media (max-width: 1219px) {
     .photo-container::before{
     
         margin-right: 40px;
         width: 38%;       
-    }    
+    }   
+    
+    .projects p {
+        min-height: 0;
+    }
 }
 
 @media (max-width: 1023px) {         
